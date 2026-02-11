@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
@@ -11,6 +10,8 @@ if (!rootElement) {
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
-    <App />
+    <div style={{ width: '100vw', height: '100vh', overflow: 'hidden' }}>
+      <App />
+    </div>
   </React.StrictMode>
 );
